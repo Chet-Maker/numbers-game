@@ -1,0 +1,68 @@
+% Project:  TeX Cover Letter Template
+% Author:   Sid Lacy
+
+\documentclass[12pt]{letter}
+\usepackage[utf8]{inputenc}
+\usepackage[empty]{fullpage}
+\usepackage[hidelinks]{hyperref}
+\usepackage{graphicx}
+\usepackage{fontawesome5}
+\usepackage{eso-pic}
+\usepackage{charter}
+
+\addtolength{\topmargin}{-0.5in}
+\addtolength{\textheight}{1.0in}
+\definecolor{gr}{RGB}{225,225,225}
+
+% Shaded header banner
+\AddToShipoutPictureBG{%
+\color{gr}
+\AtPageUpperLeft{\rule[-1.5in]{\paperwidth}{1.5in}}
+}
+
+\begin{document} 
+
+% Header
+\begin{center}
+{\fontsize{28}{0}\selectfont\scshape Chet Backiewicz}
+
+\fontsize{10}{12}\selectfont % <-- Set the fontsize to 10pt with a baseline skip of 12pt
+\href{mailto:chetbackiewicz@gmail.com}{\faEnvelope\enspace chetbackiewicz@gmail.com}\hfill
+\href{https://www.linkedin.com/in/chetbackiewicz}{\faLinkedinIn\enspace https://www.linkedin.com/in/chetbackiewicz}\hfill
+\href{tel:(740)-263-9948}{\faPhone\enspace (740)-263-9948}\hfill
+\faMapMarker\enspace Seattle, Washington
+\end{center}
+
+\vspace{0.7in}
+
+% Date
+\today\\
+
+\vspace{-0.1in}
+Dear Hiring Manager,\\
+
+% Body
+\vspace{-0.1in}
+\setlength\parindent{24pt}
+\noindent I am thrilled to submit my application for the Software Engineer position at Upstart. With a strong background in software engineering, particularly in developing full-stack web applications and driving impactful projects, I am excited about the opportunity to contribute to Upstart's mission of enhancing access to affordable credit through innovative AI solutions.
+
+During my time at JPMorgan Chase, I played a key role in leading AI-powered projects to improve efficiency and security measures, demonstrating my ability to innovate and drive results. My experience in integrating technologies such as Adobe Analytics and React aligns well with the tech stack mentioned in the job description, including Ruby on Rails and React/NextJS. I have a solid understanding of scalable system development principles and a proven track record of problem-solving and driving continuous improvement.
+
+Moreover, my experience as a Growth Strategist at Sunflower Lab honed my skills in project management, client consultation, and revenue generation, which are essential for collaborating with cross-functional partners and enhancing customer experiences at Upstart. I am confident that my technical expertise in programming languages like Java, Python, and JavaScript, combined with my AWS certifications, will enable me to make immediate contributions to the Servicing Engineering team.
+
+I am enthusiastic about the opportunity to work in a dynamic environment where innovation is valued, and where I can leverage my skills to drive impactful change. With a growth mindset and a passion for continuous improvement, I am eager to help build Upstart's engineering team and contribute to making Upstart a truly exceptional place to work.
+
+Thank you for considering my application. I look forward to the possibility of contributing to Upstart's success and being a part of a team dedicated to revolutionizing the fintech ecosystem.
+
+% Closer
+\vspace{0.1in}
+\vfill
+
+\begin{flushright}
+Sincerely,
+
+Chet Backiewicz\\
+Software Engineer II
+\end{flushright}
+
+\end{document} 

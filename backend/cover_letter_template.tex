@@ -1,0 +1,60 @@
+% Project:  TeX Cover Letter Template
+% Author:   Sid Lacy
+
+\documentclass[12pt]{letter}
+\usepackage[utf8]{inputenc}
+\usepackage[empty]{fullpage}
+\usepackage[hidelinks]{hyperref}
+\usepackage{graphicx}
+\usepackage{fontawesome5}
+\usepackage{eso-pic}
+\usepackage{charter}
+
+\addtolength{\topmargin}{-0.5in}
+\addtolength{\textheight}{1.0in}
+\definecolor{gr}{RGB}{225,225,225}
+
+% Shaded header banner
+\AddToShipoutPictureBG{%
+\color{gr}
+\AtPageUpperLeft{\rule[-1.5in]{\paperwidth}{1.5in}}
+}
+
+\begin{document} 
+
+% Header
+\begin{center}
+{\fontsize{28}{0}\selectfont\scshape %APPLICANT_NAME%}
+
+\fontsize{10}{12}\selectfont % <-- Set the fontsize to 10pt with a baseline skip of 12pt
+\href{mailto:%APPLICANT_EMAIL%}{\faEnvelope\enspace %APPLICANT_EMAIL%}\hfill
+\href{%APPLICANT_LINKEDIN%}{\faLinkedinIn\enspace %APPLICANT_LINKEDIN%}\hfill
+\href{tel:%APPLICANT_PHONE%}{\faPhone\enspace %APPLICANT_PHONE%}\hfill
+\faMapMarker\enspace %APPLICANT_LOCATION%
+\end{center}
+
+\vspace{0.7in}
+
+% Date
+\today\\
+
+\vspace{-0.1in}
+Dear Hiring Manager,\\
+
+% Body
+\vspace{-0.1in}
+\setlength\parindent{24pt}
+\noindent %COVER_LETTER_BODY%
+
+% Closer
+\vspace{0.1in}
+\vfill
+
+\begin{flushright}
+%CLOSER%,
+
+%APPLICANT_NAME%\\
+%APPLICANT_TITLE%
+\end{flushright}
+
+\end{document} 
